@@ -1,0 +1,144 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    color: #1470da;
+    margin: 0 15% 0 -1%;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .sidebar ul li svg {
+    margin-right: 10px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9fafb;
+  }
+  
+  .study-guide-form, .study-guide-display {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  .input-container{
+    display: flex;
+  }
+  
+  .study-guide-form h2, .study-guide-display h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+  
+  .study-guide-form input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .generate-btn {
+    padding: 10px 15px;
+    background-color: #292929;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .generate-btn svg {
+    margin-right: 5px;
+  }
+  
+  .outline {
+    margin-top: 10px;
+  }
+  
+  .outline p {
+    font-weight: bold;
+  }
+  
+  .outline ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .avatar img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  .icon{
+    width: 15px;
+  height: 15px;
+  color: #000;
+  margin-right: 8px;
+  }
+  .btn-container{
+    height: 36px;
+    padding-left: 7px;
+    font-style: Poppins;
+    border-radius: 3px;
+    /*background-color: #aaabac;*/
+    cursor: pointer;
+  }
+
+  .space-y-2{
+    height: auto;
+    display: block;
+    
+  }
+  .btn{
+    
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 17px;
+    padding:12px 0 0 9px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    transition: background-color 0.4s ease;
+  }
+  .btn:hover{
+    background-color: #edecec;
+  }
+   .book-open{
+    width: 15px;
+    height: 15px;
+  } 
+  .recent-title{
+    margin-left: 15px;
+    font-weight: 550;
+    font-style: bold;
+  }
