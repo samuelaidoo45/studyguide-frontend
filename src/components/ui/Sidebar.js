@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, Star, List, Settings } from 'lucide-react';
+import { Home, BookOpen, Star, List, Settings } from 'lucide-react';
 import styled from 'styled-components';
 import Avatar from './Avatar';
 
@@ -27,8 +27,8 @@ function Sidebar() {
           </NavLink>
         </li>
         <li className='btn-container'>
-          <NavLink to="/favorites" className={({ isActive }) => (isActive ? 'active-link' : 'menu-link')}>
-            <Star className='icon' /> Favorites
+          <NavLink to="/create-study-guide" className={({ isActive }) => (isActive ? 'active-link' : 'menu-link')}>
+            <BookOpen className='icon' /> New Study Guide
           </NavLink>
         </li>
         <li className='btn-container'>

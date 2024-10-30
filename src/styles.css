@@ -63,12 +63,39 @@
     border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
-  .generate-btn {
-    padding: 10px 15px;
+  .generate-btn-1{
+    width: 20%;
+    padding: 10px 10px 10px 10px;
     background-color: #292929;
     color: #fff;
     border: none;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .generate-btn {
+    width: 50%;
+    padding: 10px 0px;
+    background-color: #fff;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .generate-btn-main{
+    width: 40%;
+    padding: 10px 15px;
+    background-color: #292929;
+    /*292929*/
+    color: #fff;
+    border: none;
+    text-decoration: none;
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -76,6 +103,7 @@
   }
   
   .generate-btn svg {
+    width: 20%;
     margin-right: 5px;
   }
   
@@ -122,18 +150,23 @@
     width: 100%;
     height: 40px;
     border: none;
-    background-color: #fff;
+    background-color: #ffffff;
     margin-bottom: 17px;
     padding:12px 0 0 9px;
     border-radius: 3px;
     cursor: pointer;
+    text-decoration: none;
+    color: #333;
     display: flex;
+    align-items: center;
+
     transition: background-color 0.4s ease;
   }
   .btn:hover{
     background-color: #edecec;
   }
    .book-open{
+    margin-top: -7px;
     width: 15px;
     height: 15px;
   } 
@@ -141,6 +174,7 @@
     margin-left: 15px;
     font-weight: 550;
     font-style: bold;
+    margin-top: -1%;
   }
 
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function StudyGuide() {
   const recentGuides = [
@@ -8,26 +9,19 @@ function StudyGuide() {
     { id: 3, title: "Basics of Algebra" },
   ];
 
-  const handleGuideClick = (id) => {
-    // Navigate to the study guide page based on `id`
-    console.log("Navigating to guide:", id);
-    // You might use something like React Router here, e.g., `navigate(`/guide/${id}`)`
-  };
-
   return (
     <section className="study-guide-display p-4 bg-white rounded-lg shadow">
       <h2 className="text-lg font-semibold mb-4">Recent Study Guides</h2>
       <div className="space-y-2">
         {recentGuides.map((guide) => (
-          <button
+          <Link
             key={guide.id}
-            onClick={() => handleGuideClick(guide.id)}
-            // className="flex items-center w-full p-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
-            className='btn'
+            to={`/guide/${guide.id}`}
+            className="btn"
           >
-            <BookOpen className='book-open' />
+            <BookOpen className="book-open" />
             <span className="recent-title">{guide.title}</span>
-          </button>
+          </Link>
         ))}
       </div>
     </section>
